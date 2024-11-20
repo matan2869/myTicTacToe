@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* הגדרת קנה מידה אחיד */
+}
+
+html, body {
+    height: 100%;
+    background: linear-gradient(135deg, #FFB6C1, #FFD700, #87CEEB); /* גרדיאנט צבעים רכים ומחממים */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* פונט ידידותי לילדים */
+}
+
+body {
+    background-size: cover; /* מוודא שהגרדיאנט יכסה את כל הרקע */
+    background-position: center;
+}
+
+.tictactoe {
+    background-color: rgba(255, 255, 255, 0.8); /* צבע בהיר עם שקיפות עדינה */
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3); /* הצללה עדינה */
+    border-radius: 10px; /* קצוות מעוגלים */
+}
+
+.tictactoe .btn {
+    background-color: rgb(0, 225, 161);
+    width: calc(33% - 6px);
+    height: calc(33% - 6px);
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* עיגול קצוות כפתור */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* צל קטן לכפתור */
+}
+
+.tictactoe .btn:hover {
+    background-color: rgb(0, 180, 130); /* שינוי צבע כשעוברים עם העכבר */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* צל חזק יותר כשמעבירים מעל */
+}
+
+#isWin {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff6347; /* צבע אדום בהיר להודעה */
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* צל להדגשה של ההודעה */
+}
