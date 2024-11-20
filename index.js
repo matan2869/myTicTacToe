@@ -169,6 +169,6 @@ function win () {
         document.getElementById("isWin").innerHTML = oWin;
         alert(oWin);
     } else if (counter === 9) {
-        alert("This is a draw");
+        alert("This is a draw!");
     }
 }
